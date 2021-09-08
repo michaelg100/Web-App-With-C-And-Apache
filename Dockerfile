@@ -1,5 +1,7 @@
 FROM httpd:2.4
 COPY ./test.c /usr/local/apache2/cgi-bin/
+COPY ./query.c /usr/local/apache2/cgi-bin/
+COPY ./web.h /usr/local/apache2/cgi-bin/
 COPY ./test.pl /usr/local/apache2/cgi-bin/
 COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
 RUN apt-get update
@@ -9,7 +11,7 @@ RUN apt-get -y install \
     vim 
 
 RUN gcc -o /usr/local/apache2/cgi-bin/index.out /usr/local/apache2/cgi-bin/test.c
-
+RUN gcc -o /usr/local/apache2/cgi-bin/q.out /usr/local/apache2/cgi-bin/query.c
 # build:
 
 # docker build -t my-apache2 .
