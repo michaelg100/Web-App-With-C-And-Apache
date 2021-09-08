@@ -9,6 +9,7 @@ RUN apt-get -y install \
     vim 
 
 RUN gcc -o /usr/local/apache2/cgi-bin/index.out /usr/local/apache2/cgi-bin/test.c
+
 # build:
 
 # docker build -t my-apache2 .
@@ -17,7 +18,3 @@ RUN gcc -o /usr/local/apache2/cgi-bin/index.out /usr/local/apache2/cgi-bin/test.
 # exec:
 
 # docker exec -it my-running-app /bin/bash
-
-
-
-#other
