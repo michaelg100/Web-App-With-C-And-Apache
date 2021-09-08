@@ -21,4 +21,5 @@ curl localhost:8080/cgi-bin/index.out
 
 http://localhost:8080/cgi-bin/q.out?color=blue&user=mike
 
+Credit: https://gitlab.com/greggink/youtube_episode_cgi/-/tree/master
 
