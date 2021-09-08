@@ -16,3 +16,9 @@ curl localhost:8080/cgi-bin/index.out
 
 # View
 ![image.png](./image.png)
+
+# Visit
+
+http://localhost:8080/cgi-bin/q.out?color=blue&user=mike
+
+
