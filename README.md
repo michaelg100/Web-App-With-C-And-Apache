@@ -8,3 +8,6 @@
 ```
 curl localhost:8080/cgi-bin/index.out
 ```
+
+# Output
+[image.png](image.png)
